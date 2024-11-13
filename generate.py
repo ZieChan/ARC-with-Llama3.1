@@ -44,15 +44,15 @@ def split_dictionary(data):
 
 # Load JSON data from the files
 if test_run:
-    with open('/kaggle/input/arc-prize-2024/arc-agi_evaluation_challenges.json') as f:
+    with open('./arc-prize-2024/arc-agi_evaluation_challenges.json') as f:
         challenges = json.load(f)
         # Split tasks with multiple test inputs
         challenges, split_files = split_dictionary(challenges) 
 
-    with open('/kaggle/input/arc-prize-2024/arc-agi_evaluation_solutions.json') as f:
+    with open('./arc-prize-2024/arc-agi_evaluation_solutions.json') as f:
         solutions = json.load(f)
 else:
-    with open('/kaggle/input/arc-prize-2024/arc-agi_test_challenges.json') as f:
+    with open('./arc-prize-2024/arc-agi_test_challenges.json') as f:
         challenges = json.load(f)
     # Split tasks with multiple test inputs
     challenges, split_files = split_dictionary(challenges) 
@@ -319,7 +319,7 @@ for base_name, files in combined_files.items():
 
 # We still need to fill in dummy solutions for the tasks we did not consider to make a valid submission:
 # Load the sample submission file
-with open('/kaggle/input/arc-prize-2024/sample_submission.json') as f:
+with open('./arc-prize-2024/sample_submission.json') as f:
     sample_submission = json.load(f)
 # Fill in all entries that are still missing from the sample_submission file
 for key, value in sample_submission.items():
@@ -327,5 +327,5 @@ for key, value in sample_submission.items():
         combined_solution_dict[key] = value
 
 # Create submission
-with open("submission.json", "w") as json_file:
+with open("./arc-prize-2024/submission.json", "w") as json_file:
     json.dump(combined_solution_dict, json_file)

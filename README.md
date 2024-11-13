@@ -23,6 +23,8 @@ cd ARC-Llama3.1
 
 ## Usage
 
+***Before running the code, please make sure you have already installed all the libraries that will be imported.***
+
 ### Fine-tuning
 
 To fine-tune Llama 3.1 with the solver-enhanced prompts, run:
