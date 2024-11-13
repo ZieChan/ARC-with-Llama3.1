@@ -7,6 +7,8 @@ This project aims to enhance Llama 3.1's ability to solve ARC (Abstraction and R
 
 Current AI systems struggle to generalize in abstract reasoning tasks such as those in the ARC benchmark. By fine-tuning the Llama 3.1 model with solver-enhanced prompts, we aim to improve its generalization capabilities. This repository provides scripts for fine-tuning the model and generating solutions for ARC problems.
 
+![alt text](https://github.com/ZieChan/ARC-with-Llama3.1/blob/main/img/arc.png)
+
 ## Files
 
 - **`unsloth_fine_tuning.py`**: This script utilizes the [Unsloth](https://github.com/unslothai/unsloth) framework to fine-tune the Llama 3.1 model on ARC tasks using prompts constructed with solver outputs.
@@ -55,4 +57,6 @@ The generate.py will:
 Using this approach, we achieved significant performance improvements:
 
 - ARC Public Score: Increased from 2 to 16.
+![alt text](https://github.com/ZieChan/ARC-with-Llama3.1/blob/main/img/public.png)
 - Evaluation Accuracy: Achieved 20.14% accuracy on a test set of 427 ARC problems.
+![alt text](https://github.com/ZieChan/ARC-with-Llama3.1/blob/main/img/eval.png)
