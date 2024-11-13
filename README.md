@@ -1,4 +1,4 @@
-![alt text]([https://pub-e93d5c9fdf134c89830082377f6df465.r2.dev/2024/07/Meta-Llama-31-1024x576.webp](https://github.com/ZieChan/ARC-with-Llama3.1/blob/main/img/3221asdf.jpg))
+![alt text](https://github.com/ZieChan/ARC-with-Llama3.1/blob/main/img/3221asdf.jpg)
 
 # Fine-Tuning Llama 3.1 on medical questionnaires
 Llama 3.1 is a great open-source Large Language Model. It is 3 different models. For this fine-tuning, the 8 billion parameter lightweight model was used due to the limitation of compute and GPU. Google Colab was used with T4 GPU and High RAM, and the unsloth accelerator was used for faster and more efficient fine-tuning. 
