@@ -1,11 +1,11 @@
 import json
 
 # Load submission data
-with open('submission.json', 'r') as f:
+with open('./arc-prize-2024/submission.json', 'r') as f:
     submission = json.load(f)
 
 # Load evaluation data
-with open('arc-agi_evaluation_solutions.json', 'r') as f:
+with open('./arc-prize-2024/arc-agi_evaluation_solutions.json', 'r') as f:
     evaluation = json.load(f)
 
 total_problems = 0
