@@ -94,7 +94,7 @@ def tokenize(prompt):
     result["labels"] = result["input_ids"].copy()
     return result
 
-train_dataset = load_dataset('csv',data_files = './training.csv', split='train',trust_remote_code=True)
+train_dataset = load_dataset('csv',data_files = './arc-prize-2024/training.csv', split='train',trust_remote_code=True)
 tokenized_train_dataset = train_dataset.map(generate_and_tokenize_prompt)
 
 from trl import SFTTrainer
